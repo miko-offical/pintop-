@@ -1,0 +1,70 @@
+<html>
+    <style>
+        /*Hover Image Zoom*/
+        .Zoom-overlay{
+            width: 600px;
+            height: 350px;
+            position: relative;
+            cursor: pointer;
+            overflow: hidden;
+            border-radius:10px ;
+        }
+
+        .overlay{
+            background: transparent;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: 0.5s;
+
+        }
+
+        .Zoom-overlay:hover .overlay{
+            background: color-mix(in srgb,#3c396d, transparent 50%);
+        }
+
+        .overlay h3,p{
+            width: 100%;
+            color: #fff;
+            font-size: 36px;
+            bottom: 0;
+            left: 50%;
+            transform: translate(-50%);
+            text-align: center;
+            text-transform: capitalize;
+            position: absolute;
+            opacity: 0;
+            transition: 0.5s;
+
+
+        }
+
+        .overlay:hover h3{
+            bottom: 49%;
+            opacity: 1;
+
+        }
+
+        .overlay:hover p{
+         bottom: 39%;
+         font-size: 25px;
+         transition-delay:0.25s ;
+         opacity: 1;
+        }
+
+
+    </style>
+    <body>
+        <!--Hover Image Zoom-->
+        <div class="zoom-overlay">
+            <img src="logo-search-grid-2x.png" alt="">
+            <div class="overlay">
+                <h3>sla mahabaru</h3>
+                <p>mahabaru 13 tlalkena 12 tenashe lejosh alut</p>
+          
+            </div>
+        </div>
+    </body>
+</html>
